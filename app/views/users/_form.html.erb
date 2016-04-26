@@ -1,0 +1,15 @@
+<%= form_for @user do |f| %>
+  <%= f.label :name %><br>
+  <%= f.text_field :name %><br>
+  <%= f.label "Height in inches" %><br>
+  <%= f.text_field :height %><br>
+  <%= f.label "Happiness (1-5)" %><br>
+  <%= f.text_field :happiness %><br>
+  <%= f.label "Nausea (1-5)" %><br>
+  <%= f.text_field :nausea %><br>
+  <%= f.label "Number of tickets" %><br>
+  <%= f.text_field :tickets %><br>
+  <%= f.label "Click box if you are an administrator" %>
+  <%= f.check_box :admin %><br>
+  <%= f.submit%>
+<% end %>

@@ -1,0 +1,6 @@
+<%= form_tag(sessions_path) do |f| %>
+  <%= collection_select :user, :id, User.all, :id, :name %>
+  <%= submit_tag "Sign In" %>
+<% end %></br>
+
+<%= link_to "if you don't already have an account, sign up here", new_user_path %>

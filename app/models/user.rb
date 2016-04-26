@@ -7,6 +7,8 @@ class User < ActiveRecord::Base
       "sad"
     elsif self.happiness > self.nausea
       "happy"
+    elsif self.happiness == self.nausea
+      "neutral"
     end
   end
 
